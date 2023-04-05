@@ -5,7 +5,7 @@ const movieRouter = Router()
 
 movieRouter.post("/", movieController.create)
 movieRouter.get("/", movieController.get)
-movieRouter.put("/", movieController.update)
-movieRouter.delete("/", movieController.exclude)
+movieRouter.put("/:id", movieController.update)
+movieRouter.delete("/:id", movieController.exclude)
 
 export default movieRouter
